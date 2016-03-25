@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(RGB)
+find_package(OpenCV REQUIRED)
+add_executable(RGB RGB.cpp)
+target_link_libraries( RGB ${OpenCV_LIBS})
